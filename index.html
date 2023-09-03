@@ -1,60 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/index.css">
+
   <title>Frontend Mentor | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="./index.js" defer></script>
 </head>
+
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <header class="container flex bg-light">
+    <div class="container--logo">
+      <img class="logo" src="./assets/images/logo.svg" alt="W logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+        class="sr-only">Menu</span></button>
+    <nav>
+      <div id="primary-nav-background"></div>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+        <li><a href="#"> Home</a></li>
+        <li><a href="#"> New</a></li>
+        <li><a href="#"> Popular</a></li>
+        <li><a href="#"> Trending</a></li>
+        <li><a href="#"> Categories</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  The Bright Future of Web 3.0?
+  <main class="container grid">
+    <section class="section--main grid">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg" />
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+      </picture>
+      <h1 class="text-very-dark fs-900 fw-800">The Bright Future of Web 3.0?</h1>
+      <div class="flex">
+        <p class="text-dark">We dive into the next evolution of the web that claims to put the power of the
+          platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+        <a class="bg-red text-light fs-400 fw-700" href="#">Read more</a>
+      </div>
+    </section>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+    <section class="section--new flex bg-very-dark text-light">
+      <h2 class="text-orange fs-800 fw-700">New</h2>
+      <div class="flex">
+        <article>
+          <h3><a class="text-light fs-600 fw-700" href="#">Hydrogen VS Electric Cars</a></h3>
+          <p class="text-medium">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <article>
+          <h3><a class="text-light fs-600 fw-700" href="#">The Downsides of AI Artistry</a></h3>
+          <p class="text-medium">What are the possible adverse effects of on-demand AI image generation?</p>
+        </article>
+        <article>
+          <h3><a class="text-light fs-600 fw-700" href="#">Is VC Funding Drying Up?</a></h3>
+          <p class="text-medium">Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </p>
+        </article>
+      </div>
+    </section>
 
-  Read more
+    <section class="section--other grid">
+      <article class="grid">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs image">
+        <div>
+          <span class="text-medium fw-700 fs-700">01</span>
+          <h3><a class="text-very-dark fs-500" href="#">Reviving Retro PCs</a></h3>
+          <p class="text-dark">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
+      <article class="grid">
+        <img src="./assets/images/image-top-laptops.jpg" alt="Laptops image">
+        <div>
+          <span class="text-medium fw-700 fs-700">02</span>
+          <h3><a class="text-very-dark fs-500" href="#">Top 10 Laptops of 2022</a></h3>
+          <p class="text-dark">Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
+      <article class="grid">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming controller image">
+        <div>
+          <span class="text-medium fw-700 fs-700">03</span>
+          <h3><a class="text-very-dark fs-500" href="#">The Growth of Gaming</a></h3>
+          <p class="text-dark">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </section>
 
-  New 
+  </main>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/jositu">Josephine Situ</a>.
+  </div> -->
 </body>
+
 </html>

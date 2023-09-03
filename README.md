@@ -33,22 +33,19 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github page](https://jositu.github.io/fm-news-homepage/)
 
 ## My process
 
-`.5hr`
+<!-- `8hr` -->
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Javascript
 - CSS Grid
 - [Normalize.css](https://necolas.github.io/normalize.css/) - CSS reset for more consistent styling throughout different browsers
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
@@ -68,46 +65,23 @@ instead of setting my custom color properties with actual values in hsl format, 
 }
 ```
 
-Setting the property as ONLY the number values, such as the example below, is much more useful. This way I can adjust the opacity of this color much more easily.
+Setting the property as ONLY the number values, such as the example below, is much more useful. This way I can adjust the opacity of this color whenever I use the variable elsewhere in my CSS.
 
 ```css
 :root {
   --clr-orange: 35, 77%, 62%;
 }
-```
 
-Practice using aria attributes in my code.
-
-```css
-.gid-item {
-  grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
+#primary-nav-background {
+  background-color: hsl(var(--clr-very-dark) / 0.4);
 }
 ```
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
-```
+Practiced using aria attributes in my code.
 
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 

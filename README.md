@@ -13,8 +13,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -32,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution page](https://www.frontendmentor.io/solutions/homepage-using-css-grid-BYsD258ZVP)
 - Live Site URL: [Github page](https://jositu.github.io/fm-news-homepage/)
 
 ## My process
@@ -78,10 +76,6 @@ Setting the property as ONLY the number values, such as the example below, is mu
 ```
 
 Practiced using aria attributes in my code.
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 ## Author
 
